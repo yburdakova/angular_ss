@@ -1,6 +1,11 @@
 <div class="profile-card">
   <div class="avatar-name">
-    <img src="{{profile.avatarUrl}}" alt="Avatar" class="profile-card__avatar"/>
+    <!-- | imgUrl - insert after profile.avatarUrl for switch to API-avatar -->
+    <img
+      [src]="profile.avatarUrl "
+      [alt]="profile.username"
+      class="profile-card__avatar"
+      />
     <div class="profile-card__name">
       <strong>{{profile.firstName}} {{profile.lastName}}</strong>
       <span>{{profile.username}}</span>

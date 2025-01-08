@@ -1,6 +1,12 @@
 
-<div class="profile-card__wrapper">
-  @for (profile of profiles; track profile.id) {
-    <app-profile-card [profile]="profile"></app-profile-card>
-    }
+<div class="app-container">
+  <header class="header-container">
+    <app-header></app-header>
+  </header>
+  <main class="main-container">
+    <router-outlet></router-outlet>
+  </main>
+  <footer class="footer-container">
+    <app-footer></app-footer>
+  </footer>
 </div>
