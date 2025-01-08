@@ -5,11 +5,37 @@
 :root{
   --background-color: #ECECEC;
   --font-color: #2D2C2C;
+  --subtitle-color: #484747;
   --accent-color: #284C63;
+  --primary-color: #4292f3;
 }
 
 body{
   background: var(--background-color);
   color: var(--font-color);
   font-family: 'Poppins', sans-serif;
+}
+
+.skill-tag{
+  padding: 4px 8px;
+  border-radius: 4px;
+  border: 1px solid var(--font-color);
+  display: inline;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.btn{
+  border: none;
+  background: var(--primary-color);
+  color: var(--font-color);
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.h6{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
 }

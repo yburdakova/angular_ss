@@ -1,9 +1,22 @@
 <div class="profile-card">
   <div class="avatar-name">
-    <img src="/public/assets/avatars/user4.jpg" alt="Avatar" class="profile-card__avatar"/>
+    <img src="{{profile.avatarUrl}}" alt="Avatar" class="profile-card__avatar"/>
     <div class="profile-card__name">
-      <strong>User Name</strong>
-      <span>Nickname</span>
+      <strong>{{profile.firstName}} {{profile.lastName}}</strong>
+      <span>{{profile.username}}</span>
     </div>
+  </div>
+  <div class="profile-card__description">
+    {{profile.description}}
+  </div>
+
+  <div class="profile-card__tags">
+    @for (skill of profile.stack; track skill) {
+      <div class="skill-tag" >{{skill}}</div>
+      }
+  </div>
+
+  <div class="profile-card__action-btns">
+    <button type="submit" class="btn">Follow</button>
   </div>
 </div>
